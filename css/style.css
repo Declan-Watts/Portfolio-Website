@@ -1,0 +1,344 @@
+/* Colour Pallet
+#fdfffc
+#e5d352
+#5eb6f5b3
+#537d8d
+#1b2021
+ */
+
+/* Setting the page default settings */
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #fdfffc;
+}
+
+/* Smooth Scrolling when nav is pressed */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Setting Defaults for h1 and p */
+h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+}
+
+/* Standard margin for the site */
+
+.margin {
+  margin-bottom: 40px;
+}
+
+/* Nav */
+nav {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  border-bottom: 2px solid #e5d352;
+  z-index: 4;
+}
+
+.nav-logo {
+  position: absolute;
+  top: 5px;
+  left: 40px;
+  width: 30px;
+  height: 30px;
+  text-transform: uppercase;
+}
+
+.nav-logo a {
+  text-decoration: none;
+  color: #e5d352;
+}
+
+nav ul {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  right: 70px;
+}
+
+nav a li {
+  position: relative;
+  padding-top: 27px;
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+  height: 53px;
+  color: #e5d352;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+nav a li:hover {
+  background-color: #e5d352;
+  color: #1b2021;
+}
+
+.active {
+  background-color: #e5d352;
+  color: #1b2021;
+}
+
+.toggler {
+  top: 15px;
+  position: absolute;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  display: none;
+}
+
+.toggler i {
+  color: #e5d352;
+  text-decoration: none;
+}
+
+.bg {
+  background-color: #e5d352;
+  border-bottom: 2px solid #1b2021;
+  color: #1b2021;
+  -webkit-animation: fade-in-bg 0.3s;
+  -moz-animation: fade-in-bg 0.3s;
+  -ms-animation: fade-in-bg 0.3s;
+  -o-animation: fade-in-bg 0.3s;
+  animation: fade-in-bg 0.3s;
+}
+
+.bg a {
+  color: #1b2021;
+}
+
+.bg-icon {
+  color: #1b2021 !important;
+}
+
+.bg .toggled {
+  background-color: #e5d352;
+  -webkit-animation: fade-in-bg 0.3s;
+  -moz-animation: fade-in-bg 0.3s;
+  -ms-animation: fade-in-bg 0.3s;
+  -o-animation: fade-in-bg 0.3s;
+  animation: fade-in-bg 0.3s;
+}
+
+@-moz-keyframes fade-in-bg {
+  from {
+    background-color: rgb(229, 211, 82, 0);
+  }
+
+  to {
+    background-color: rgb(229, 211, 82);
+  }
+}
+
+@keyframes fade-in-bg {
+  from {
+    background-color: rgb(229, 211, 82, 0);
+  }
+
+  to {
+    background-color: rgb(229, 211, 82);
+  }
+}
+
+/* Safari, Chrome, Opera */
+@-webkit-keyframes fade-in-bg {
+  from {
+    background-color: rgb(229, 211, 82, 0);
+  }
+
+  to {
+    background-color: rgb(229, 211, 82);
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fade-in-bg {
+  from {
+    background-color: rgb(229, 211, 82, 0);
+  }
+
+  to {
+    background-color: rgb(229, 211, 82);
+  }
+}
+
+.bg a li:hover {
+  background-color: #1b2021;
+  color: #e5d352 !important;
+}
+
+/* Header */
+header {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../img/backlit-keyboard.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.heading-container {
+  position: relative;
+  top: 300px;
+  margin: auto;
+  width: 500px;
+  max-width: 80%;
+  height: 100px;
+  text-align: center;
+  color: #fdfffc;
+}
+
+.heading-container h1 {
+  margin: 0;
+  font-size: 3.5rem;
+  padding: 20px 0;
+  border: 2px solid #e5d352;
+}
+
+.heading-container h1:hover {
+  background-color: #e5d352;
+  color: #1b2021;
+  border: 2px solid #1b2021;
+}
+
+/* Heading Underneath the Header */
+.heading {
+  margin: 40px auto;
+  text-align: center;
+  max-width: 90%;
+  width: 300px;
+  height: 100px;
+}
+
+.heading h1 {
+  margin: 0;
+  font-size: 3.5rem;
+  padding: 40px 0;
+  border-bottom: 2px solid #5cb5f4b3;
+}
+
+/* My Work Card Grid system */
+
+.work-container {
+  position: relative;
+  width: 900px;
+  max-width: 90%;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #fdfffc;
+  box-shadow: 0px 0px 20px 2px rgb(0, 0, 0, 0.5);
+}
+
+.work-card {
+  background-color: #e5d352;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 30px;
+  text-align: center;
+  margin: 10px;
+  height: 498px;
+}
+
+#work-card-1 {
+  background-image: url('../img/card1.jpg');
+}
+
+#work-card-2 {
+  background-image: url('../img/card2.jpg');
+}
+
+#work-card-3 {
+  background-image: url('../img/card3.jpg');
+}
+
+#work-card-4 {
+  background-image: url('../img/Unofficial_JavaScript_logo_2.svg');
+}
+
+/* My Work Card Overlay Affect */
+
+.work-card-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(60, 104, 135, 0);
+  opacity: 0;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out;
+  -ms-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.work-card-overlay:hover {
+  opacity: 1;
+  background-color: #5eb6f5b3;
+}
+
+/* Card Links */
+
+.card-links {
+  position: relative;
+  top: 200px;
+}
+
+.card-links a i {
+  font-size: 50px;
+  padding: 10px;
+  color: #1b2021;
+}
+
+.card-links h1 {
+  font-size: 20px;
+}
+
+/* Media Querys */
+@media (max-width: 1024px) {
+  /* Grid Container */
+  .work-container {
+    width: 600px;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .toggler {
+    display: inline-block;
+  }
+  .collapse ul {
+    background-color: #1b2021;
+    top: 82px;
+    width: 100%;
+    text-align: center;
+    right: 0;
+    display: none;
+  }
+  .collapse ul a li {
+    width: 100%;
+    text-align: center;
+    right: 0;
+  }
+
+  /* Slide in Animation */
+  .toggled {
+    display: block !important;
+  }
+
+  /* Grid Container */
+  .work-container {
+    width: 300px;
+    grid-template-columns: auto;
+  }
+}
